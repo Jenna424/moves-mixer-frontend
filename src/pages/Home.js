@@ -39,7 +39,7 @@ const Home = () => {
   const createWorkout = async (event) => {
     event.preventDefault()
     await axios
-      .post('/workouts', newWorkout)
+      .post(`${BASE_URL}/workouts`, newWorkout)
       .then(function (response) {
         fetchWorkouts()
       })
