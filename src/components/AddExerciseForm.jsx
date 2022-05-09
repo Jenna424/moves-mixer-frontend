@@ -13,11 +13,11 @@ const AddExerciseForm = ({ newExercise, handleExerciseInputChange, createExercis
         </div>
         <div className="form-field">
           <label><b>Sets</b>:</label>
-          <input name="sets" type="text" onChange={handleExerciseInputChange} placeholder="Enter number of sets..." value={newExercise.sets} required />
+          <input name="sets" type="number" onChange={handleExerciseInputChange} placeholder="Enter number of sets..." value={newExercise.sets} required />
         </div>
         <div className="form-field">
           <label><b>Reps</b>:</label>
-          <input name="reps" type="text" onChange={handleExerciseInputChange} placeholder="Enter number of reps.." value={newExercise.reps} required />
+          <input name="reps" type="number" onChange={handleExerciseInputChange} placeholder="Enter number of reps.." value={newExercise.reps} required />
         </div>
         <div className="form-field">
           <label><b>Image</b>:</label>
