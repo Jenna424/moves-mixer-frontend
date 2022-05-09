@@ -19,6 +19,7 @@ const ExerciseInstructions = () => {
   return (
     <div className="exercise-instructions-page">
       <h3>{exercise.name} Exercise Guide</h3>
+      <img src={exercise.image} alt={exercise.name} />
       <p>
         <b>Instructions</b>: <em>{exercise.instructions}</em>
       </p>
