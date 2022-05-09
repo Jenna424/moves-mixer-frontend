@@ -11,7 +11,7 @@ const Home = () => {
     title: '',
     trainingType: '',
     targetArea: '',
-    duration: '',
+    duration: null,
     image: ''
   })
   const [workouts, setWorkouts] = useState([])
