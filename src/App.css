@@ -9,6 +9,39 @@
 body {
   width: 100vw;
   height: 100vh;
+  text-align: center;
+}
+
+h1.workout-routines-heading {
+  margin-bottom: 10px;
+}
+
+.form-container {
+  padding: 20px;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 200px;
+  max-width: 90%;
+  max-height: 100%;
+  padding: 20px;
+}
+
+.create-workout-form {
+  display: grid;
+}
+
+.form-field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5px;
+}
+.form-field label {
+  text-align: end;
+  margin-right: 5px;
+}
+.form-field input {
+  width: 300px;
+  border-radius: 5px;
 }
 
 .workouts-wrapper {
@@ -34,4 +67,21 @@ img {
 a {
   text-decoration: none;
   color: black;
+}
+
+
+@media only screen and (max-width: 375px) { 
+  .form-field {
+    max-width: 100%;
+  }
+
+  .form-field label {
+    font-size: 13px;
+  }
+  .form-field input {
+    max-width: 70%;
+  }
+  .button-wrapper {
+    margin-right: 70px;
+  }
 }
