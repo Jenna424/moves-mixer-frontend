@@ -58,7 +58,7 @@ const Home = () => {
   return (
     <div className="homepage">
       <button onClick={toggleIsFormHidden}>
-        {isFormHidden ? 'Show Workout Form' : 'Hide Workout Form'}
+        {isFormHidden ? 'Design Workout' : 'Close Form'}
       </button>
       {!isFormHidden && (
         <CreateWorkoutForm
