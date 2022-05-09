@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { BASE_URL } from '../globals'
 import AddExerciseForm from '../components/AddExerciseForm'
@@ -136,13 +136,12 @@ const WorkoutDetails = () => {
       <h2>Exercise Movements</h2>
       <div className="exercise-cards-container">
         {exercises.map((exercise) => (
-          <Link to={`/exercises/${exercise._id}`} key={exercise._id}>
-            <ExerciseCard
-              {...exercise}
-              updateExercise={updateExercise}
-              deleteExercise={deleteExercise}
-            />
-          </Link>
+          <ExerciseCard
+            key={exercise._id}
+            {...exercise}
+            updateExercise={updateExercise}
+            deleteExercise={deleteExercise}
+          />
         ))}
       </div>
       <button
