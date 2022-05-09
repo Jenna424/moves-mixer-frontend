@@ -17,7 +17,7 @@ const CreateWorkoutForm = ({ newWorkout, handleInputChange, createWorkout }) => 
         </div>
         <div className="form-field">
           <label><b>Duration</b>:</label>
-          <input name="duration" type="text" onChange={handleInputChange} placeholder="Enter duration (in minutes)..." value={newWorkout.duration} required />
+          <input name="duration" type="number" onChange={handleInputChange} placeholder="Enter duration (in minutes)..." value={newWorkout.duration} required />
         </div>
         <div className="form-field">
           <label><b>Image</b>:</label>
