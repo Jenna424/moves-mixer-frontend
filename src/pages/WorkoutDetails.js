@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import axios from 'axios'
 import { BASE_URL } from '../globals'
 import AddExerciseForm from '../components/AddExerciseForm'
@@ -13,8 +13,8 @@ const WorkoutDetails = () => {
   const [newExercise, setNewExercise] = useState({
     name: '',
     instructions: '',
-    sets: '',
-    reps: '',
+    sets: null,
+    reps: null,
     image: '',
     workout: id
   })
@@ -104,7 +104,7 @@ const WorkoutDetails = () => {
   }
 
   // Marks the exercise as completed
-  const updateExercise = async () => {
+  const updateExercise = async (id) => {
     await axios
       .put(`${BASE_URL}/exercises/${id}`, { completed: true })
       .then(function (response) {
@@ -136,12 +136,13 @@ const WorkoutDetails = () => {
       <h2>Exercise Movements</h2>
       <div className="exercise-cards-container">
         {exercises.map((exercise) => (
-          <ExerciseCard
-            key={exercise._id}
-            {...exercise}
-            updateExercise={updateExercise}
-            deleteExercise={deleteExercise}
-          />
+          <Link to={`/exercises/${exercise._id}`} key={exercise._id}>
+            <ExerciseCard
+              {...exercise}
+              updateExercise={updateExercise}
+              deleteExercise={deleteExercise}
+            />
+          </Link>
         ))}
       </div>
       <button
