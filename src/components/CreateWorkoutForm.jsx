@@ -1,8 +1,8 @@
 const CreateWorkoutForm = ({ newWorkout, handleInputChange, createWorkout }) => {
   return (
     <div className="form-container">
-      <h2>Design a Custom Workout Routine</h2>
-      <form onSubmit={createWorkout}>
+      <h2>Design a Workout Routine</h2>
+      <form className="create-workout-form" onSubmit={createWorkout}>
         <div className="form-field">
           <label><b>Title</b>:</label>
           <input name="title" type="text" onChange={handleInputChange} placeholder="Enter title..." value={newWorkout.title} required />
