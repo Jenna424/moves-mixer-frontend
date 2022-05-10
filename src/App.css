@@ -124,3 +124,18 @@ a {
     margin-right: 70px;
   }
 }
+
+/* About Page */
+.instructions-intro-paragraph {
+  margin: 20px 0;
+}
+
+.subheader {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.meditation-image {
+  margin-top: 3%;
+  width: 20%;
+}
