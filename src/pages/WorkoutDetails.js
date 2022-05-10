@@ -127,11 +127,14 @@ const WorkoutDetails = () => {
         {isAddExerciseFormHidden ? 'Add Exercise' : 'Close Form'}
       </button>
       {!isAddExerciseFormHidden && (
-        <AddExerciseForm
-          newExercise={newExercise}
-          handleExerciseInputChange={handleExerciseInputChange}
-          createExercise={createExercise}
-        />
+        <div className="form-wrapper">
+          <AddExerciseForm
+            newExercise={newExercise}
+            handleExerciseInputChange={handleExerciseInputChange}
+            createExercise={createExercise}
+            toggleIsAddExerciseFormHidden={toggleIsAddExerciseFormHidden}
+          />
+        </div>
       )}
       <h2>Exercise Movements</h2>
       <div className="exercise-cards-container">
@@ -151,11 +154,14 @@ const WorkoutDetails = () => {
         {isAddEquipmentFormHidden ? 'Add Equipment' : 'Close Form'}
       </button>
       {!isAddEquipmentFormHidden && (
-        <AddEquipmentForm
-          newEquipment={newEquipment}
-          handleEquipmentInputChange={handleEquipmentInputChange}
-          createEquipment={createEquipment}
-        />
+        <div className="form-wrapper">
+          <AddEquipmentForm
+            newEquipment={newEquipment}
+            handleEquipmentInputChange={handleEquipmentInputChange}
+            createEquipment={createEquipment}
+            toggleIsAddEquipmentFormHidden={toggleIsAddEquipmentFormHidden}
+          />
+        </div>
       )}
       <h2>Equipment Requirements</h2>
       <div className="equipment-cards-container">
