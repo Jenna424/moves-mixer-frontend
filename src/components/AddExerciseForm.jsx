@@ -1,6 +1,7 @@
-const AddExerciseForm = ({ newExercise, handleExerciseInputChange, createExercise }) => {
+const AddExerciseForm = ({ newExercise, handleExerciseInputChange, createExercise, toggleIsAddExerciseFormHidden }) => {
   return (
     <div className="form-container">
+      <button onClick={toggleIsAddExerciseFormHidden} className='close-modal'>X</button>
       <h2>Add Exercise Movement</h2>
       <form onSubmit={createExercise}>
         <div className="form-field">
@@ -9,7 +10,7 @@ const AddExerciseForm = ({ newExercise, handleExerciseInputChange, createExercis
         </div>
         <div className="form-field">
           <label><b>Instructions</b>:</label>
-          <textarea name="instructions" onChange={handleExerciseInputChange} placeholder="Enter instructions for performing exercise..." value={newExercise.instructions} required />
+          <textarea name="instructions" onChange={handleExerciseInputChange} placeholder="Enter instructions..." value={newExercise.instructions} required />
         </div>
         <div className="form-field">
           <label><b>Sets</b>:</label>
