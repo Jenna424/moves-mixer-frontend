@@ -1,6 +1,7 @@
-const AddEquipmentForm = ({ newEquipment, handleEquipmentInputChange, createEquipment }) => {
+const AddEquipmentForm = ({ newEquipment, handleEquipmentInputChange, createEquipment, toggleIsAddEquipmentFormHidden }) => {
   return (
     <div className="form-container">
+      <button onClick={toggleIsAddEquipmentFormHidden} className='close-modal'>X</button>
       <h2>Add Equipment</h2>
       <form onSubmit={createEquipment}>
         <div className="form-field">
@@ -9,7 +10,7 @@ const AddEquipmentForm = ({ newEquipment, handleEquipmentInputChange, createEqui
         </div>
         <div className="form-field">
           <label><b>Specifications</b>:</label>
-          <input name="specifications" type="text" onChange={handleEquipmentInputChange} placeholder="Enter equipment specifications..." value={newEquipment.specifications} required />
+          <input name="specifications" type="text" onChange={handleEquipmentInputChange} placeholder="Enter specifications..." value={newEquipment.specifications} required />
         </div>
         <div className="form-field">
           <label><b>Image</b>:</label>
