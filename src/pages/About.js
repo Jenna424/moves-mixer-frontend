@@ -2,10 +2,15 @@ const About = () => {
   return (
     <div className="about-page">
       <h1 className="app-title">Moves Mixer</h1>
-      <h4>
-        <em>An app that enables you to design custom workout routines</em>
+      <h4 className="subheader">
+        An app that enables you to design custom workout routines
       </h4>
       <div className="about-page-body">
+        <img
+          className="meditation-image"
+          src="https://i.imgur.com/tVxElpS.png"
+          alt="meditative robot"
+        />
         <div className="instructions-wrapper">
           <p className="instructions-intro-paragraph">
             Please follow the instructions below:
