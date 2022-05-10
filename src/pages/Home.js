@@ -61,11 +61,14 @@ const Home = () => {
         {isFormHidden ? 'Design Workout' : 'Close Form'}
       </button>
       {!isFormHidden && (
-        <CreateWorkoutForm
-          newWorkout={newWorkout}
-          handleInputChange={handleInputChange}
-          createWorkout={createWorkout}
-        />
+        <div className="form-wrapper">
+          <CreateWorkoutForm
+            newWorkout={newWorkout}
+            handleInputChange={handleInputChange}
+            createWorkout={createWorkout}
+            toggleIsFormHidden={toggleIsFormHidden}
+          />
+        </div>
       )}
       <h1 className="workout-routines-heading">Workout Routines</h1>
       <div className="workouts-wrapper">
