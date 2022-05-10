@@ -16,12 +16,8 @@ const About = () => {
             equipment requirements.
           </p>
           <p>
-            Add a new exercise to the workout by submitting the form that
-            appears on button click.
-          </p>
-          <p>
-            Add a new piece of equipment to the workout by submitting the form
-            that appears on button click.
+            Add a new exercise or piece of equipment to the workout on form
+            submission.
           </p>
           <p>
             <p>
