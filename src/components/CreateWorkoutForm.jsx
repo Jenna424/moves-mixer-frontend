@@ -1,6 +1,7 @@
-const CreateWorkoutForm = ({ newWorkout, handleInputChange, createWorkout }) => {
+const CreateWorkoutForm = ({ newWorkout, handleInputChange, createWorkout, toggleIsFormHidden }) => {
   return (
     <div className="form-container">
+       <button onClick={toggleIsFormHidden} className='close-modal'>X</button>
       <h2>Design a Workout Routine</h2>
       <form className="create-workout-form" onSubmit={createWorkout}>
         <div className="form-field">
