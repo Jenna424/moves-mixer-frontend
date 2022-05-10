@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="about-page">
-      <h1>Moves Mixer</h1>
+      <h1 className="app-title">Moves Mixer</h1>
       <h4>
         <em>An app that enables you to design custom workout routines</em>
       </h4>
