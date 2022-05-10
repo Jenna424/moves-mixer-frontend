@@ -67,7 +67,7 @@ const Home = () => {
           createWorkout={createWorkout}
         />
       )}
-      <h1>Workout Routines</h1>
+      <h1 className="workout-routines-heading">Workout Routines</h1>
       <div className="workouts-wrapper">
         {workouts.map((workout) => (
           <Link to={`/workouts/${workout._id}`} key={workout._id}>
