@@ -103,7 +103,7 @@ button, input[type="submit"] {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  margin: 5%;
+  margin: 2%;
   padding-bottom: 50px;
 }
 
