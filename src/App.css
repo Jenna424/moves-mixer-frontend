@@ -205,3 +205,36 @@ a {
 ul.instructions {
   line-height: 1.5;
 }
+
+.footer-design {
+  overflow: hidden;
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+}
+
+.dance-container {
+  transform: translateY(5px);
+}
+
+.ground-hr {
+  width: 100%;
+  height: 15px;
+  margin: 0;
+  background-color: #baabc9;
+  border: none;
+}
+
+.ballerinaOne {
+  width: 70px; 
+  position: relative;
+  animation: danceOne 5s infinite;
+}
+
+@keyframes danceOne {
+  0%   {transform: rotate(-100deg);}
+  25%  {transform: rotate(-95deg) !important;}
+  50%  {transform: rotate(35deg);}
+  75%  {transform: rotate(50deg) !important;}
+  100% {transform: rotate(-100deg);}
+}
