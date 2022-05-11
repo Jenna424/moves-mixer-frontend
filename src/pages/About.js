@@ -1,3 +1,5 @@
+import Footer from '../components/Footer'
+
 const About = () => {
   return (
     <div className="about-page">
@@ -33,6 +35,9 @@ const About = () => {
             <li>Remove an exercise from the workout.</li>
           </ul>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   )
