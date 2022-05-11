@@ -196,7 +196,12 @@ a {
   font-style: italic;
 }
 
-.meditation-image {
+.yoga-image {
   margin-top: 3%;
-  width: 20%;
+  width: 30%;
+  border-radius: 8px;
+}
+
+ul.instructions {
+  line-height: 1.5;
 }
