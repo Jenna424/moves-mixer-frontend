@@ -75,6 +75,7 @@ const WorkoutDetails = () => {
       image: '',
       workout: id
     })
+    toggleIsAddExerciseFormHidden()
   }
 
   const createEquipment = async (event) => {
@@ -93,6 +94,7 @@ const WorkoutDetails = () => {
       image: '',
       workout: id
     })
+    toggleIsAddEquipmentFormHidden()
   }
 
   const toggleIsAddExerciseFormHidden = () => {
