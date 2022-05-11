@@ -53,6 +53,7 @@ const Home = () => {
       duration: '',
       image: ''
     })
+    toggleIsFormHidden()
   }
 
   return (
