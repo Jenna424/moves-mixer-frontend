@@ -124,6 +124,16 @@ button, input[type="submit"] {
   background-color: #baabc9;
 }
 
+.exercise-card h3:hover {
+  background-color: #baabc9;
+  color: lightgoldenrodyellow;
+  border-radius: 8px;
+}
+
+.equipment-card {
+  cursor: default;
+}
+
 img {
   width: 45%;
   height: 50%;
