@@ -124,6 +124,11 @@ button, input[type="submit"] {
   background-color: #baabc9;
 }
 
+.exercise-card h3 {
+  padding: 3px;
+  margin-top: 3px;
+}
+
 .exercise-card h3:hover {
   background-color: #baabc9;
   color: lightgoldenrodyellow;
