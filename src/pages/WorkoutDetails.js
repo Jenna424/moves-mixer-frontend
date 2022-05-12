@@ -139,6 +139,9 @@ const WorkoutDetails = () => {
         </div>
       )}
       <h2>Exercise Movements</h2>
+      {!exercises.length && (
+        <p>Nothing here yet. Mix some moves into your workout!</p>
+      )}
       <div className="exercise-cards-container">
         {exercises.map((exercise) => (
           <ExerciseCard
@@ -166,6 +169,11 @@ const WorkoutDetails = () => {
         </div>
       )}
       <h2>Equipment Requirements</h2>
+      {!equipment.length && (
+        <p>
+          Nothing here yet. Amp up your workout by adding a piece of equipment!
+        </p>
+      )}
       <div className="equipment-cards-container">
         {equipment.map((pieceOfEquipment) => (
           <EquipmentCard key={pieceOfEquipment._id} {...pieceOfEquipment} />
