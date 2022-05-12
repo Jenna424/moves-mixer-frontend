@@ -91,6 +91,7 @@ h1.workout-routines-heading {
 }
 
 button, input[type="submit"] {
+  margin-bottom: 10px;
   border-radius: 7px;
   border: none;
   padding: 10px;
@@ -237,4 +238,33 @@ ul.instructions {
   50%  {transform: rotate(35deg);}
   75%  {transform: rotate(50deg) !important;}
   100% {transform: rotate(-100deg);}
+}
+
+/* Exercise Guide Page */
+.exercise-guide-page {
+  padding: 25px;
+}
+
+.exercise-guide-heading {
+  font-size: 45px;
+}
+
+.exercise-guide-subheading {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.exercise-guide-img {
+  margin-top: 3%;
+  width: 25%;
+  object-fit: contain;
+}
+
+.instructions-heading {
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.instructions-p {
+  line-height: 1.5;
 }
