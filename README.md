@@ -33,6 +33,10 @@
 
 ### **_Screenshots_**
 
+![Image](https://i.imgur.com/5AZN4ee.png)
+
+![Image](https://i.imgur.com/vQ7prFZ.png)
+
 ---
 
 ### **_Future Updates_**
